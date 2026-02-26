@@ -5,7 +5,7 @@ import { DatabaseModule } from './database/database.module';
 import { ContributionsModule } from './contributions/contributions.module';
 
 @Module({
-  imports: [ConfigModule.forRoot(),DatabaseModule , CommonModule, ContributionsModule],
+  imports: [ConfigModule.forRoot({ isGlobal: true }),DatabaseModule , CommonModule, ContributionsModule],
   controllers: [],
   providers: [],
 })
